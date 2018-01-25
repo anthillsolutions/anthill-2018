@@ -1,0 +1,25 @@
+/* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: 'MarkPro';
+  src: url('/assets/fonts/MarkPro.otf') format('opentype');
+}
+
+$anthill-grey: rgb(135,138,139);
+$anthill-blue: rgb(0,108,182);
+$grey-superlight: rgba(250,250,250,0.9);
+$grey-light: rgba(245,245,245,0.9);
+$grey-faded: rgba(250,250,250,0.1);
+$grey-superfaded: rgba(245,245,245,0.1);
+
+body {
+  font-weight: 300;
+  font-family: 'MarkPro', arial, sans-serif;
+}
+
+.anthill {
+  color: $anthill-grey;
+  font-weight: lighter;
+  span {
+    font-weight: bold;
+  }
+}
