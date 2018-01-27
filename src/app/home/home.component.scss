@@ -1,0 +1,49 @@
+@import '~_colors.scss';
+
+.home-title-box {
+  width: 100%;
+  img {
+    margin-top: 20vh;
+    margin-bottom: 2vh;
+    width: 100%;
+  }
+  text-align: justify;
+  .anthill {
+    color: $grey-text;
+    font-size: 2em;
+    line-height: 46px;
+    text-align: center;
+    span {
+      display: block;
+    }
+  }
+}
+
+@media (min-width: 576px) {
+  .home-title-box {
+    width: 479px;
+    text-align: justify;
+    img {
+      margin-top: 40vh;
+    }
+    .anthill {
+      font-size: 35px;
+      word-spacing: 9px;
+      span {
+        display: inline;
+      }
+    }
+    .text-big {
+      font-size: 20px;
+    }
+  }
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  padding-bottom: 3px;
+}
