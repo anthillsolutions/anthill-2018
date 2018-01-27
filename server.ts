@@ -14,6 +14,7 @@ enableProdMode();
 const app = express();
 
 const PORT = process.env.PORT || 4000;
+const PRIVATE_IP = process.env.PRIVATE_IP || 'localhost';
 const DIST_FOLDER = join(process.cwd(), 'dist');
 
 // Our index.html we'll use as our template
@@ -54,5 +55,5 @@ app.get('*', (req, res) => {
 
 // Start up the Node server
 app.listen(PORT, () => {
-  console.log(`Node Express server listening on http://localhost:${PORT}`);
+  console.log(`Node Express server listening on http://${PRIVATE_IP}:${PORT}`);
 });
