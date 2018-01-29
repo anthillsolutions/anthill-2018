@@ -1,21 +1,83 @@
-<div class="shape-rising" [@chevronL]="message"></div>
-<div class="shape-waning" [@chevronR]="message"></div>
-<div class="container">
-  <div class="home-title-box">
-    <img src="/assets/img/logo_original.png" [@logo]="message">
-    <p class="anthill">
-      towards <span>solutions</span> together
-    </p>
-    <p class="text-big">
-      Managing micro services around the world bringing
-      people into advanced solutions.
-    </p>
-  </div>
+<div class="home">
+  <div class="shape-rising" [@chevronL]="message"></div>
+  <div class="shape-waning" [@chevronR]="message"></div>
+  <div class="container">
+    <div class="title-box">
+      <img src="/assets/img/logo_original.png" [@logo]="message">
+      <p class="anthill">
+        towards <span>solutions</span> together
+      </p>
+      <p class="text-big">
+        Managing micro services around the world bringing
+        people into advanced solutions.
+      </p>
+    </div>
 
-  <div class="d-none d-sm-block go-down" [@logo]="message">
-    <button class="btn btn-outline-secondary">
-      <i class="fa fa-angle-double-down fa-2x"></i>
-    </button>
+    <div class="d-none d-sm-block go-down" [@logo]="message">
+      <button class="btn btn-outline-secondary">
+        <i class="fa fa-angle-double-down fa-2x"></i>
+      </button>
+    </div>
+  </div>
+</div>
+
+<div class="services">
+  <div class="double-dash">
+  </div>
+  <div class="container">
+    <h1>Services</h1>
+    <div class="row">
+      <div class="col-xs-12 col-sm-4">
+        <div class="bordered">
+          <div>
+            <i class="fa fa-cogs fa-5x" aria-hidden="true"></i>
+          </div>
+          <h2>Micro-services</h2>
+          <p>
+            Transform old monolitic systems into numerous
+            adaptive micro-services.
+          </p>
+          <p>
+            Control your expenses with fine tuning setups
+            and adapt the number of instances to your customers needs.
+          </p>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-4">
+        <div class="bordered">
+          <div>
+            <i class="fa fa-globe fa-5x" aria-hidden="true"></i>
+          </div>
+          <h2>Geo-data</h2>
+          <p>
+            A database for geo location information, such as
+            place reviews, points of interests or even paths.
+          </p>
+          <p>
+            Through several applications, allow users to feed more
+            information and share it.
+          </p>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-4">
+        <div class="bordered">
+          <div>
+            <i class="fa fa-mobile fa-5x" aria-hidden="true"></i>
+          </div>
+          <h2>Application design</h2>
+          <p>
+            Consider having your website designed as a mobile
+            application. Give more quality functionalities to
+            your customers by having a dedicated application.
+          </p>
+          <p>
+            With hybrid technologies, anthill<b>solutions</b>
+            can create a suitable environment between mobile
+            application and desktop website.
+          </p>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 
