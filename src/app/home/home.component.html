@@ -1,7 +1,8 @@
-<div class="chevron"></div>
+<div class="shape-rising" [@chevronL]="message"></div>
+<div class="shape-waning" [@chevronR]="message"></div>
 <div class="container">
   <div class="home-title-box">
-    <img src="/assets/img/logo_original.png">
+    <img src="/assets/img/logo_original.png" [@logo]="message">
     <p class="anthill">
       towards <span>solutions</span> together
     </p>
@@ -10,14 +11,21 @@
       people into advanced solutions.
     </p>
   </div>
+
+  <div class="d-none d-sm-block go-down" [@logo]="message">
+    <button class="btn btn-outline-secondary">
+      <i class="fa fa-angle-double-down fa-2x"></i>
+    </button>
+  </div>
 </div>
+
 
 <!-- temporary contact footer -->
 <div class="footer">
   © 2018 anthill<span>solutions</span>
   -
-  contact:
   <a href="mailto:pierre@anthillsolutions.fr">
-    pierre@anthillsolutions.fr
+    <i class="fa fa-envelope"></i>
+    contact
   </a>
 </div>

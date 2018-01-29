@@ -20,46 +20,22 @@ body {
   }
 }
 
-.chevron {
+.shape-rising {
   position: absolute;
-  text-align: center;
-  padding: 12px;
-  margin-bottom: 6px;
-  margin-top: 30%;
+  z-index: -1;
   height: 40%;
   width: 100%;
-  z-index: -1;
-  @media (min-width: 992px) {
-    height: 40%;
-    margin-top: 20%;
-  }
+  margin-top: 30%;
+  background: $grey-light;
+  transform: skew(0deg, -6deg);
 }
 
-.chevron:before {
-  content: '';
+.shape-waning {
   position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
+  z-index: -1;
+  height: 40%;
   width: 100%;
-  background: $grey-light;
-  -webkit-transform: skew(0deg, 6deg);
-  -moz-transform: skew(0deg, 6deg);
-  -ms-transform: skew(0deg, 6deg);
-  -o-transform: skew(0deg, 6deg);
-  transform: skew(0deg, 6deg);
-}
-.chevron:after {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
+  margin-top: 30%;
   background: $grey-superlight;
-  -webkit-transform: skew(0deg, -6deg);
-  -moz-transform: skew(0deg, -6deg);
-  -ms-transform: skew(0deg, -6deg);
-  -o-transform: skew(0deg, -6deg);
-  transform: skew(0deg, -6deg);
+  transform: skew(0deg, 6deg);
 }
